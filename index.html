@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mc-Adv-2</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Minecraft Adventure 2</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="pg/progress.html">Fortschritt</a></li>
+            <li><a href="pg/roadmap.html">RoadMap</a></li>
+            <li><a href="pg/start.html">Beginn deine Reise</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>Es ist Zeit für ein neues</span><br>Abenteuer</h2>
+        <img src="pic/bird1.png" id="bird1">
+        <img src="pic/bird2.png" id="bird2">
+        <img src="pic/forest.png" id="forest">
+        <img src="pic/rocks.png" id="rocks">
+        <img src="pic/water.png" id="water">
+    </section>
+    <div class="sec">
+        <h1 style="color: #fff;">Change Log</h1>
+        <div class="container">
+            <div class="timeline">
+              <ul>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">N/A</h3>
+                    <h1>Update 1.2.0</h1>
+                    <p>- [WIP]<br><br><h1>Known Issues:</h1>- Hauptmenümusik spielt weiter nach dem Verlassen des Menüs<br>- Man kann sich im Hauptmenü bewegen<br>- Hauptmenü UI wird nach dem Verlassen immer noch Angezeigt<br>- Ambience Musik wird nicht richtig abgespielt<br>- Allgemeine Plugin Fehler -> Update von Java erforderlich<br>- Nach Weltupdate sind Nebenwelten nicht mehr erreichbar<br>- Minecraft kann crashen wenn quit.mcfunction ausgeführt wird<br>- Neue Welt ist in MvTP nicht erreichbar</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">03/09/2022</h3>
+                    <h1>Update 1.1.5b2F</h1>
+                    <p><br><h1>Added:</h1><br>- Finale Welt importiert<br><br><h1>Fixed:</h1>-<br><br><h1>Known Issues:</h1>- Hauptmenümusik spielt weiter nach dem Verlassen des Menüs<br>- Man kann sich im Hauptmenü bewegen<br>- Hauptmenü UI wird nach dem Verlassen immer noch Angezeigt<br>- Ambience Musik wird nicht richtig abgespielt<br>- Allgemeine Plugin Fehler -> Update von Java erforderlich<br>- Nach Weltupdate sind Nebenwelten nicht mehr erreichbar<br>- Minecraft kann crashen wenn quit.mcfunction ausgeführt wird</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">16/08/2022</h3>
+                    <h1>Update 1.1.5b</h1>
+                    <p><br><h1>Added:</h1><br><br><h1>Fixed:</h1>-<br><br><h1>Known Issues:</h1>- Hauptmenümusik spielt weiter nach dem Verlassen des Menüs<br>- Man kann sich im Hauptmenü bewegen<br>- Hauptmenü UI wird nach dem Verlassen immer noch Angezeigt<br>- Ambience Musik wird nicht richtig abgespielt<br>- Allgemeine Plugin Fehler -> Update von Java erforderlich</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h3 class="date">14/08/2022</h3>
+                    <h1>Update 1.1.5</h1>
+                    <p><br><h1>Added:</h1>- Geldeinsamel System<br>- Performance Mode Optimierungen<br><br><h1>Fixed:</h1>-<br><br><h1>Known Issues:</h1>- Hauptmenümusik spielt weiter nach dem Verlassen des Menüs<br>- Man kann sich im Hauptmenü bewegen<br>- Hauptmenü UI wird nach dem Verlassen immer noch Angezeigt</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <img src="pic/Adventure_Studios.png" class="img" id="logo">
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let forest = document.getElementById('forest');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop =  value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+</html>

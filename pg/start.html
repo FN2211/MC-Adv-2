@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Mc-Adv-2</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Adv-2</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="progress.html">Fortschritt</a></li>
+            <li><a href="roadmap.html">RoadMap</a></li>
+            <li><a href="#" class="active">Beginn deine Reise</a></li>
+        </ul>
+    </header>
+    <section>
+        <span>Leider steht Minecraft Adventure 2 derzeit nicht zur Verfügung.<br>Für den aktuellen Fortschritt schaue unter "Fortschritt" nach.<br>[Error Code: -1]</span>
+        <img src="../pic/forest.png" id="forest">
+        <img src="../pic/rocks.png" id="rocks">
+        <img src="../pic/water.png" id="water">
+    </section>
+    <img src="../pic/Adventure_Studios.png" class="img" id="logo">
+
+    <script>
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let forest = document.getElementById('forest');
+        let rocks = document.getElementById('rocks');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            btn.style.marginTop =  value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+<style>
+    section span
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30%;
+        color: red;
+        font-size: 25px;
+    }
+    section span a
+    {
+        text-decoration: none;
+        color: red;
+    }
+</style>
+</html>
