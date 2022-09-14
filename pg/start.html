@@ -18,12 +18,30 @@
         </ul>
     </header>
     <section>
-        <span>Leider steht Minecraft Adventure 2 derzeit nicht zur Verfügung.<br>Für den aktuellen Fortschritt schaue unter "Fortschritt" nach.<br>[Error Code: -1]</span>
         <img src="../pic/forest.png" id="forest">
         <img src="../pic/rocks.png" id="rocks">
         <img src="../pic/water.png" id="water">
     </section>
     <img src="../pic/Adventure_Studios.png" class="img" id="logo">
+    <div class="sec">
+        <h1 style="color: #fff;">Downloads</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Bitte Lizenz-Schlüssel eingeben um Downloads freizuschalten</p>
+        <div class="wrapper">
+            <div class="input-data">
+                <input type="text" required>
+                <label>Schlüssel</label>
+                <button>Aktivieren</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         let text = document.getElementById('text');
@@ -47,6 +65,44 @@
 
 </body>
 <style>
+    .wrapper
+    {
+        width: 450px;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0px  0px 10px rgba(0,0,0,0.1);
+    }
+    .wrapper .input-data
+    {
+        height: 40px;
+        width: 100%;
+        position: relative;
+    }
+    .wrapper .input-data input
+    {
+        height: 100%;
+        width: 100%;
+        border: none;
+        font-size: 17px;
+        border-bottom: 2px solid silver;
+        text-decoration: none;
+    }
+    .input-data input:focus ~ label,
+    .input-data input:valid ~ label
+    {
+        transform: translateY(-20px);
+        font-size: 15px;
+        color: #4158d0;
+    }
+    .wrapper .input-data label
+    {
+        position: absolute;
+        right: 81%;
+        bottom: 10px;
+        color: gray;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
     section span
     {
         display: flex;
